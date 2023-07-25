@@ -24,6 +24,7 @@ body {
 
 .card {
   border-radius: 1rem;
+  box-shadow: 5px 10px 10px hsl(0, 0%, 81%);
 }
 
 .icon {
@@ -52,7 +53,7 @@ body {
 
 .card-text {
   color: hsl(0, 0%, 81%);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .one {
@@ -97,7 +98,11 @@ h2,
 }
 
 .card-text {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.attribution {
+  margin-top: 4rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -112,7 +117,7 @@ h2,
   }
   .grid-container {
     display: grid;
-    max-width: 69.375rem;
+    max-width: 70rem;
     grid-template-areas: "one one two five" "three four four five";
     grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
