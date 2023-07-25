@@ -10,31 +10,57 @@ body,
   margin: 0;
   padding: 0;
   font-family: "Barlow Semi Condensed";
+  font-size: 13px;
 }
 
 body {
-  margin: 2rem;
   background-color: hsl(210, 46%, 95%);
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
   border-radius: 1rem;
 }
 
+.icon {
+  width: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
 .card-top {
+  font-size: 0.8rem;
   position: relative;
+  top: -0.3rem;
+  left: 0.5rem;
+  display: inline-block;
 }
 .card-top .title {
   font-weight: 600;
+  line-height: 0.8rem;
 }
-.card-top img {
-  display: block;
-  border-radius: 50%;
+.card-top .vgraduate {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.9rem;
+}
+
+.card-text {
+  color: hsl(0, 0%, 81%);
+  padding-bottom: 2rem;
 }
 
 .one {
   background-color: hsl(263, 55%, 52%);
   color: hsl(0, 0%, 100%);
+}
+.one .icon {
+  border: 2px solid hsl(263, 55%, 80%);
 }
 
 .two {
@@ -54,11 +80,35 @@ body {
 .five {
   background-color: hsl(0, 0%, 100%);
 }
+.five .title {
+  color: hsl(217, 19%, 35%);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+h2,
+.card-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card-text {
+  margin-bottom: 2rem;
+}
 
 @media screen and (min-width: 1000px) {
+  body,
+  * {
+    margin: 0;
+  }
   body {
+    margin-top: 10rem;
     display: grid;
-    place-content: center;
+    place-items: center;
   }
   .grid-container {
     display: grid;
